@@ -1,0 +1,15 @@
+.header {
+  height: 45rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.75),
+      rgba($color-primary-dark, 0.75)
+    ),
+    url(../img/bg-header.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

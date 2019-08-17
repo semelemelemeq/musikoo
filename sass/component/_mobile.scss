@@ -1,0 +1,21 @@
+.mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__img-box {
+    flex: 0 0 60%;
+    text-align: center;
+    margin-right: 2rem;
+  }
+
+  &__img {
+    width: 70rem;
+  }
+
+  &__info {
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}

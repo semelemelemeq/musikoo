@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  color: #333; }
+
+.heading-primary {
+  color: #fff;
+  margin-bottom: 3rem;
+  text-align: center; }
+  .heading-primary--main {
+    font-family: "Lexend Deca", sans-serif;
+    display: block;
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    font-weight: 400; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem; }
+  .heading-primary--tertiary {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem; }
+
+.heading-secondary {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  display: block;
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  color: #000; }
+  .heading-secondary--line-orange::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.3rem;
+    background-image: linear-gradient(to right, #7d01a1, #f30 50%, #f50);
+    margin-top: 15px; }
+
+.paragraph {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem; }
+  .paragraph__w90 {
+    max-width: 53rem; }
+  .paragraph__big {
+    font-size: 2.4rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 2.5rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.trending {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem 0; }
+  .trending > * {
+    margin-right: 2rem; }
+  .trending__song {
+    display: flex;
+    flex-direction: column; }
+  .trending__img {
+    width: 20rem;
+    margin-bottom: 1rem; }
+  .trending__title {
+    font-size: 1.6rem; }
+  .trending__author {
+    font-size: 1.2rem; }
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  font-weight: 300;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s; }
+
+.btn:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+.btn--white {
+  background: #fff;
+  color: #333; }
+  .btn--white::after {
+    background: #fff; }
+
+.btn--yellow {
+  background: #ff8000;
+  color: #fff; }
+  .btn--yellow::after {
+    background: #ff8000; }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 0.5rem;
+    padding: 0.7rem 2rem;
+    width: 100%;
+    transition: all 0.2s;
+    margin-right: -4.5rem;
+    display: flex;
+    align-items: center; }
+    .search__input:focus {
+      outline: none; }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #b4b4b4; }
+  .search__input:focus + .search__button,
+  .search__input:focus + .search__icon {
+    background-color: #ff9933;
+    fill: #fff; }
+  .search__button {
+    border: none;
+    background-color: #ff8000;
+    padding: 0.25rem 0;
+    width: 4rem;
+    border-radius: 0.5rem;
+    margin-right: -5rem; }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #fff;
+    margin-top: 0.2rem; }
+
+.mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mobile__img-box {
+    flex: 0 0 60%;
+    text-align: center;
+    margin-right: 2rem; }
+  .mobile__img {
+    width: 70rem; }
+  .mobile__info > *:not(:last-child) {
+    margin-bottom: 2rem; }
+
+.header {
+  height: 45rem;
+  background-image: linear-gradient(to right bottom, rgba(167, 150, 232, 0.75), rgba(107, 102, 198, 0.75)), url(../img/bg-header.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  border-top: 5px solid #ff8000;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1000; }
+  .navigation__logo {
+    font-family: "Lexend Deca", sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem; }
+  .navigation__list {
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+  .navigation__item:not(:last-child) {
+    margin-right: 2.5rem; }
+  .navigation__link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem; }
+  .navigation__button-box > *:not(:last-child) {
+    margin-right: 1rem; }
+  .navigation__button {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem; }
+    .navigation__button--sign {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff; }
+    .navigation__button--create {
+      background-color: #ff8000;
+      color: #fff; }
+  .navigation__scrolled {
+    background-color: #896deb; }
+
+.section-search {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.upload > *:not(:last-child) {
+  margin-right: 1rem; }
+
+.section-trending {
+  padding: 1rem 3rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.section-mobile {
+  padding: 5rem; }

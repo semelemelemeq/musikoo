@@ -1,0 +1,24 @@
+.section-search {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload {
+  & > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.section-trending {
+  padding: 1rem 3rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-mobile {
+  padding: 5rem;
+}

@@ -1,0 +1,71 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  border-top: 5px solid $color-secondary-dark;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1000;
+
+  &__logo-box {
+  }
+
+  &__logo {
+    font-family: "Lexend Deca", sans-serif;
+    color: $color-white;
+    font-size: $default-font-size;
+    letter-spacing: 0.3rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+  }
+
+  &__button-box {
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__button {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+
+    &--sign {
+      background-color: transparent;
+      color: $color-white;
+      border: 1px solid $color-white;
+    }
+
+    &--create {
+      background-color: $color-secondary-dark;
+      color: $color-white;
+    }
+  }
+
+  &__scrolled {
+    background-color: $color-primary;
+  }
+}

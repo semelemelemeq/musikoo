@@ -1,0 +1,60 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    font-weight: 300;
+
+    // For <button>
+    cursor: pointer;
+    border: none;
+
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+  }
+
+  &--white {
+    background: $color-white;
+    color: $color-grey-dark-1;
+
+    &::after {
+      background: $color-white;
+    }
+  }
+
+  &--yellow {
+    background: $color-secondary-dark;
+    color: $color-white;
+
+    &::after {
+      background: $color-secondary-dark;
+    }
+  }
+
+  &--app-store {
+  }
+}
+
+.btn--animated {
+}
